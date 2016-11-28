@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<form method="POST" action="">
+		<h5>Log In<h5>
+	    {{ login_form.hidden_tag() }}
+	    {{ login_form.username }}<br>
+	    {{ login_form.password }}<br>
+	    <input type="submit" value="Go">
+	</form>
+{% endblock %}

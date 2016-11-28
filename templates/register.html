@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<form method="POST" action="">
+		<h5>Register<h5>
+	    {{ register_form.hidden_tag() }}
+	    {{ register_form.username }}<br>
+	    {{ register_form.email }}<br>
+	    {{ register_form.password }}<br>
+	    <input type="submit" value="Register">
+	</form>
+{% endblock %}
